@@ -5,6 +5,6 @@ ADD https://www.free-css.com/assets/files/free-css-templates/download/page273/ba
 WORKDIR /var/www/html
 RUN unzip bakery.zip
 RUN cp -rvf bakery/* .
-RUN rm -rf __MACOSX bakery bakery.zip
+#RUN rm -rf __MACOSX bakery bakery.zip
 CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
 EXPOSE 80
